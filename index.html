@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChipFlights</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- хедер -->
+    <header class="header">
+        <a href="index.html"><img src="logo.png" alt="logo" class="logo"></a>
+        <nav class="navigation">
+            <a href="#acia" class="nav-link">Акция</a>
+            <a href="#serch" class="nav-link">Поиск</a>
+            <a href="booking.html" class="nav-link">Регистрация на рейс</a>
+            <a href="login.html" class="nav-link">Личный Кабинет</a>
+        </nav>
+    </header>
+    <!-- основной контент -->
+    <main>
+        <h1 class="main-zogolov">Мы сближаем города, вы - живете там, где хотите.</h1>
+        <!-- секция принцыпы  -->
+        <section class="prinzipi">
+            <h2 class="zogolovok">Выберите дату и введите количество бронирований:</h2>
+            <form class="prin-form">
+                <label class="prin-label" for="departureDat">Дата вылета:</label>
+                <input class="prin-inp" id="departureDat" type="date" required>
+
+                <label class="prin-label" for="numBookings">Количество бронирований:</label>
+                <input class="prin-inp" type="number" id="numBookings" min="1" max="10" required>
+
+                <button class="prin-btn" type="button" onclick="calculateCost()">Рассчитать стоимость</button>
+            </form>
+        </section>
+        
+        <!-- секция деерии к компании -->
+        <section class="doveri">
+            <h2 class="zogolovok">Доверии компании</h2>
+            <ul>
+                <li class="li-text">Мы гордимся тем, что создаем отношения, основанные на доверии. Наши клиенты выбирают нас из-за нашей надежности, профессионализма и внимания к деталям.</li>
+                <li class="li-text">Наша компания стремится предоставить высококачественные услуги, и мы благодарны за долгосрочные отношения с нашими партнерами и клиентами.</li>
+                <li class="li-text">Присоединяйтесь к нам и оцените надежность, которую мы предоставляем в каждом аспекте нашего бизнеса.</li>
+            </ul>
+        </section>
+        <!-- поиск -->
+        <section class="serch" id="serch">
+            <h2 class="zogolovok">Поиск</h2>
+            <form class="serch-form">
+                <label class="form-label" for="from">Откуда:</label>
+                <input class="form-inp" type="text" id="from" name="from" required>
+    
+                <label class="form-label" for="to">Куда:</label>
+                <input class="form-inp" type="text" id="to" name="to" required>
+    
+                <label class="form-label" for="departureDate">Туда:</label>
+                <input class="form-inp-date" id="departureDate" type="date" name="departureDate" required>
+    
+                <label class="form-label" for="returnDate">Обратно:</label>
+                <input class="form-inp-date" type="date" id="returnDate" name="returnDate" required>
+    
+                <label class="form-label" for="passengers">Количество пассажиров (1-8):</label>
+                <input class="form-inp-num" type="number" id="passengers" name="passengers" min="1" max="8" required>
+    
+                <button class="form-btn" type="submit">Найти билеты</button>
+            </form>
+        </section>
+        <!-- акции -->
+        <section class="accia" id="acia">
+            <h2 class="zogolovok">Акции</h2>
+            <div class="wrapper">
+                <div class="promotion">
+                    <img src="images/promotions/promotion1.jpg" alt="Акция 1">
+                    <h3>Returning and Changing Your Tickets</h3>
+                    <p>The pandemic has changed many travelers plans, but we know that it will not last forever. 
+                        Once all of this is over, we will continue exploring this world the way we used to. 
+                        Special rules that have been developed for this challenging situation will help you cancel your trip
+                        or postpone it until later.</p>
+                    <button class="view-button">Просмотреть акцию</button>
+                </div>
+                <div class="promotion">
+                    <img src="images/promotions/promotion2.jpg" alt="Акция 1">
+                    <h3>Best offers</h3>
+                    <p>To see again the streets that witnessed so much. To hug your beloved ones and look back to see
+                        what youve come through. And to think of new dreams that will be so special!
+                        </p>
+                    <button class="view-button">Просмотреть акцию</button>
+                </div>
+                <div class="promotion">
+                    <img src="images/promotions/promotion3.jpg" alt="Акция 1">
+                    <h3>See you more often</h3>
+                    <p>Since the beginning of January, we have been expanding the geography of flights in Russia so that you can
+                        see your loved ones more often. Choose our company to fly to where you are always expected.
+                        </p>
+                    <button class="view-button">Просмотреть акцию</button>
+                </div>
+                <div class="promotion">
+                    <img src="images/promotions/promotion4.jpg" alt="Акция 1">
+                    <h3>Everything is on again</h3>
+                    <p>From August 10, we will resume flights to Turkey. Flights from Moscow to Antalya will be operated twice
+                        a day daily, and flights on the Moscow-Dalaman route will be operated three to seven times a week.
+                        </p>
+                    <button class="view-button">Просмотреть акцию</button>
+                </div>
+            </div>
+            
+        </section>
+        <!-- секция - Подписаться на акции -->
+        <section class="podpiska">
+            <h2 class="zogolovok">Подписаться на закрытые акции</h2>
+            <form class="podp-form">
+                <label class="podp-label" for="email">Email:</label>
+                <input class="podp-inp" type="email" id="email" name="email" required>
+            
+                <button class="podp-btn" type="submit">Подписаться</button>
+            </form>
+        </section>
+    </main>
+    <!-- подвал сайта -->
+    <footer class="footer">
+        <p class="tel">Телефон “8 (800) 800-80-80” </p>
+        <nav class="nav-footer">
+            <a href="http://xxxxxx-m1.wsr.ru" class="nav-link-footer">Home</a>
+            <a href="http://xxxxxx-m1.wsr.ru/login" class="nav-link-footer">Login</a>
+            <a href="http://xxxxxx-m1.wsr.ru/signup" class="nav-link-footer">Sign up</a>
+            <a href="http://xxxxxx-m1.wsr.ru/contact" class="nav-link-footer">Contact</a>
+            <a href="http://xxxxxx-m1.wsr.ru/news" class="nav-link-footer">News</a>
+            <a href="http://xxxxxx-m1.wsr.ru/return" class="nav-link-footer">Return</a>
+            <a href="http://xxxxxx-m1.wsr.ru/feedback" class="nav-link-footer">Feedback</a>
+        </nav>
+    </footer>
+</body>
+</html>

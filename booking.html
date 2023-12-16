@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница бронирования</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bron">
+  <header class="header">
+    <a href="index.html"><img src="logo.png" alt="logo" class="logo"></a>
+    <nav class="navigation">
+        <a href="#acia" class="nav-link">Акция</a>
+        <a href="#serch" class="nav-link">Поиск</a>
+        <a href="booking.html" class="nav-link">Регистрация на рейс</a>
+        <a href="login.html" class="nav-link">Личный Кабинет</a>
+    </nav>
+  </header>
+  <div class="flight-details">
+    <h2>Данные о рейсах</h2>
+    <!-- Форма для ввода данных о рейсах -->
+    <label for="flightNumber">Номер рейса:</label>
+    <input type="text" id="flightNumber" name="flightNumber" required>
+
+    <label for="departureCity">Город вылета:</label>
+    <input type="text" id="departureCity" name="departureCity" required>
+
+  </div>
+
+  <div class="passenger-details">
+    <h2>Данные о пассажирах</h2>
+    <div class="passenger">
+      <!-- Форма для ввода данных о пассажирах -->
+      <label for="passengerName">Имя:</label>
+      <input type="text" id="passengerName" name="passengerName" required>
+
+      <label for="passengerSurname">Фамилия:</label>
+      <input type="text" id="passengerSurname" name="passengerSurname" required>
+
+      <button type="button">Удалить пассажира</button>
+    </div>
+    <button class="podp-btn" type="button">Добавить пассажира</button>
+  </div>
+
+  <div class="booking-details">
+    <h2>Итоговая стоимость</h2>
+    <p id="finalCost">0 рублей</p>
+    <button type="button" class="confirm-button">Оформить бронирование</button>
+  </div>
+
+</body>
+</html>

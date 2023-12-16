@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lk">
+  <header class="header">
+    <a href="index.html"><img src="logo.png" alt="logo" class="logo"></a>
+    <nav class="navigation">
+        <a href="#acia" class="nav-link">Акция</a>
+        <a href="#serch" class="nav-link">Поиск</a>
+        <a href="booking.html" class="nav-link">Регистрация на рейс</a>
+        <a href="login.html" class="nav-link">Личный Кабинет</a>
+    </nav>
+  </header>
+  <div class="user-info">
+    <h2>Информация о пользователе</h2>
+    <label >Имя:</label>
+    <p id="userName">John</p>
+
+    <label >Фамилия:</label>
+    <p id="userSurname">Doe</p>
+
+    <label >Количество полетов:</label>
+    <p id="flightCount">10</p>
+
+    <button class="logout-button">Выйти из личного кабинета</button>
+  </div>
+
+  <div class="upcoming-bookings">
+    <h2>Предстоящие бронирования</h2>
+    <div class="booking">
+      <label >Код бронирования:</label>
+      <p id="bookingCode">ABC123</p>
+
+      <label >Дата вылета:</label>
+      <p id="departureDate">2023-01-01</p>
+
+      <label >Аэропорт вылета:</label>
+      <p id="departureAirport">Airport A</p>
+
+      <label >Аэропорт назначения:</label>
+      <p id="destinationAirport">Airport B</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
